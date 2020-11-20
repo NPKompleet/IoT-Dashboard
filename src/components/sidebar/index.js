@@ -6,7 +6,6 @@ const Sidebar = () => {
     return (
             <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-                {/* Sidebar - Brand */}
                 <a className="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                     {/* <div className="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-chart-line"></i>
@@ -16,7 +15,6 @@ const Sidebar = () => {
 
                 <hr className="sidebar-divider my-0"/>
 
-                {/* Nav Item - Dashboard */}
                 <NavItem 
                     icon={"fas fa-fw fa-tachometer-alt"}
                     link={"index.html"}
@@ -25,12 +23,10 @@ const Sidebar = () => {
 
                 <hr className="sidebar-divider"/>
 
-                {/* Heading */}
                 <div className="sidebar-heading">
                     Interface
                 </div>
 
-                {/* Nav Item - Pages Collapse Menu */}
                 <CollapsibleNavItem 
                     id = {"collapseTwo"}
                     icon={"fas fa-fw fa-cog"} 
@@ -39,7 +35,6 @@ const Sidebar = () => {
                     items ={[["Buttons", "buttons.html"], ["Cards","cards.html"]]}
                 />
 
-                {/* Nav Item - Utilities Collapse Menu */}
                 <CollapsibleNavItem 
                     id = {"collapseUtilities"}
                     icon={"fas fa-fw fa-wrench"} 
@@ -50,12 +45,10 @@ const Sidebar = () => {
 
                 <hr className="sidebar-divider"/>
 
-                {/* Heading */}
                 <div className="sidebar-heading">
-                    Addons
+                    Navigation
                 </div>
 
-                {/* Nav Item - Pages Collapse Menu */}
                 <CollapsibleNavItem 
                     id = {"collapsePages"}
                     icon={"fas fa-fw fa-folder"} 
@@ -64,14 +57,12 @@ const Sidebar = () => {
                     items ={[["Login", "login.html"], ["Register","register.html"], ["Blank Page","blank.html"]]}
                 />
 
-                {/* Nav Item - Charts */}
                 <NavItem 
                     icon={"fas fa-fw fa-chart-area"}
                     link={"charts.html"}
                     text={"Charts"}
                 />
 
-                {/* Nav Item - Tables */}
                  <NavItem 
                     icon={"fas fa-fw fa-table"}
                     link={"tables.html"}
