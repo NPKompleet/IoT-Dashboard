@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '@fortawesome/fontawesome-free/css/all.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'jquery-easing/dist/jquery.easing.1.3.umd'
 
 ReactDOM.render(
   <React.StrictMode>
