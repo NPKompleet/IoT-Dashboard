@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Set height of body and the document to 100% */
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 150px;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+.minitablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  width: 150px;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: block;
+}
+
+.minitabcontent {
+  min-height: 450px;
+}
+
+.tachometer {
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  position: relative;
+}
+
+.tachometer-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 66.6% 33.4%;
+}
+
+.grid-sensor {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.grid-others {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  align-content: start;
+}
+
+.span-2-col {
+  grid-column: 1 / 3;
+}
