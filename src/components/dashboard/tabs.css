@@ -11,7 +11,6 @@ html {
 
 /* Style tab links */
 .tablink {
-  background-color: #555;
   color: white;
   float: left;
   border: none;
@@ -26,8 +25,19 @@ html {
   background-color: #777;
 }
 
+button:focus {
+  outline: 0px dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+}
+
+/* Override index.css button behavior */
+.tablink.bg-primary:hover,
+.tablink.bg-primary:focus {
+  background-color: #4e73df !important;
+  cursor: default;
+}
+
 .minitablink {
-  background-color: #555;
   color: white;
   float: left;
   border: none;
@@ -35,6 +45,13 @@ html {
   cursor: pointer;
   font-size: 14px;
   width: 150px;
+}
+
+/* Override index.css button behavior */
+.minitablink.bg-light:hover,
+.minitablink.bg-light:focus {
+  background-color: #f8f9fc !important;
+  cursor: default;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
