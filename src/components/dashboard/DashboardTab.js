@@ -23,7 +23,7 @@ const DashboardTab = () => {
                     );
                 })}
             </div>
-            <TabContent/>
+            <TabContent content={floors[value]}/>
         </div>
            
     )
